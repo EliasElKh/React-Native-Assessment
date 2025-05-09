@@ -1,23 +1,26 @@
 import { StyleSheet } from 'react-native';
 import { moderateScale } from '../../utils/scalingUtils';
+import { scaleFont } from '../../utils/fontScaling';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: moderateScale(20), // Scaled padding
+    padding: moderateScale(20),
     backgroundColor: '#f5f7fa',
   },
   header: {
-    fontSize: moderateScale(24), // Scaled font size
+    fontSize: scaleFont(24),
     fontWeight: 'bold',
-    marginBottom: moderateScale(20), // Scaled margin bottom
+    marginBottom: moderateScale(20),
+    fontFamily: 'ComicRelief-Regular',
   },
   error: {
     color: 'red',
-    marginTop: moderateScale(5), // Scaled margin top
-    fontSize: moderateScale(12), // Scaled font size
+    marginTop: moderateScale(5),
+    fontSize: scaleFont(12),
+    fontFamily: 'ComicRelief-Regular',
   },
 });
 export const darkScreenStyles = StyleSheet.create({
@@ -25,18 +28,20 @@ export const darkScreenStyles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: moderateScale(20), // Scaled padding
+    padding: moderateScale(20),
     backgroundColor: '#2c3e50',
   },
   header: {
-    fontSize: moderateScale(24), // Scaled font size
+    fontSize: scaleFont(24),
     fontWeight: 'bold',
-    marginBottom: moderateScale(20), // Scaled margin bottom
-    color: '#ecf0f1', // Light text color for dark mode
+    marginBottom: moderateScale(20),
+    color: '#ecf0f1',
+    fontFamily: 'ComicRelief-Regular',
   },
   error: {
-    color: '#e74c3c', // Red color for error in dark mode
-    marginTop: moderateScale(5), // Scaled margin top
-    fontSize: moderateScale(12), // Scaled font size
+    color: '#e74c3c',
+    marginTop: moderateScale(5),
+    fontSize: scaleFont(12),
+    fontFamily: 'ComicRelief-Regular',
   },
 });

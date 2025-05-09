@@ -8,6 +8,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { styles as light } from './HomeScreen.styles';
 import { darkButtonStyles } from './HomeScreen.styles';
 
+
 export const HomeScreen: React.FC = () => {
   const { logout } = useAuth();
   const { toggleTheme, theme } = useTheme();

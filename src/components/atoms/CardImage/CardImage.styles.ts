@@ -4,7 +4,7 @@ import { moderateScale } from '../../../utils/scalingUtils';
 export const styles = StyleSheet.create({
     image: {
       width: '100%',
-      height: moderateScale(200),  // Adjust height based on screen size
+      height: moderateScale(200),
     borderRadius: moderateScale(8),
     },
   });

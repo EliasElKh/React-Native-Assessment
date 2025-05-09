@@ -38,7 +38,7 @@ export const SignUpForm = () => {
 
   const onSubmit = (data: FormData) => {
     console.log('SignUp Data:', data);
-    login(); // Simulates signup and logs user in
+    login();
   };
 
   return (

@@ -1,72 +1,83 @@
 import { StyleSheet } from 'react-native';
 import { moderateScale } from '../../utils/scalingUtils';
+import { scaleFont } from '../../utils/fontScaling';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f7fa', // Light mode background color
+    backgroundColor: '#f5f7fa',
     alignItems: 'center',
-    padding: moderateScale(20), // Scaled padding
+    padding: moderateScale(20),
     justifyContent: 'center',
+    fontFamily: 'ComicRelief-Regular',
   },
   image: {
-    width: moderateScale(200), // Scaled image width
-    height: moderateScale(200), // Scaled image height
-    marginBottom: moderateScale(20), // Scaled margin bottom
+    width: moderateScale(200),
+    height: moderateScale(200),
+    marginBottom: moderateScale(20),
   },
   title: {
-    fontSize: moderateScale(28), // Scaled font size
+    fontSize: scaleFont(28),
     fontWeight: '700',
-    color: '#2c3e50', // Dark text color
-    marginBottom: moderateScale(5), // Scaled margin bottom
+    color: '#2c3e50',
+    marginBottom: moderateScale(5),
+    fontFamily: 'ComicRelief-Regular',
   },
   subtitle: {
-    fontSize: moderateScale(16), // Scaled font size
-    color: '#7f8c8d', // Light gray text color
-    marginBottom: moderateScale(30), // Scaled margin bottom
+    fontSize: scaleFont(16),
+    color: '#7f8c8d',
+    marginBottom: moderateScale(30),
+    fontFamily: 'ComicRelief-Regular',
   },
   signupText: {
-    marginTop: moderateScale(20), // Scaled margin top
-    fontSize: moderateScale(14), // Scaled font size
+    marginTop: moderateScale(20),
+    fontSize: scaleFont(14),
     color: '#555',
+    fontFamily: 'ComicRelief-Regular',
   },
   signupLink: {
-    color: '#007BFF', // Link color
+    color: '#007BFF',
     fontWeight: 'bold',
+    fontFamily: 'ComicRelief-Regular',
   },
 });
 
 export const darkScreenStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#2c3e50', // Dark mode background color
+    backgroundColor: '#2c3e50',
     alignItems: 'center',
-    padding: moderateScale(20), // Scaled padding
+    padding: moderateScale(20),
     justifyContent: 'center',
+    fontFamily: 'ComicRelief-Regular',
   },
   image: {
-    width: moderateScale(200), // Scaled image width
-    height: moderateScale(200), // Scaled image height
-    marginBottom: moderateScale(20), // Scaled margin bottom
+    width: moderateScale(200),
+    height: moderateScale(200),
+    marginBottom: moderateScale(20),
   },
   title: {
-    fontSize: moderateScale(28), // Scaled font size
+    fontSize: scaleFont(28),
     fontWeight: '700',
-    color: '#ecf0f1', // Light text color for dark mode
-    marginBottom: moderateScale(5), // Scaled margin bottom
+    color: '#ecf0f1',
+    marginBottom: moderateScale(5),
+    fontFamily: 'ComicRelief-Regular',
   },
   subtitle: {
-    fontSize: moderateScale(16), // Scaled font size
-    color: '#bdc3c7', // Lighter gray text for dark mode
-    marginBottom: moderateScale(30), // Scaled margin bottom
+    fontSize: scaleFont(16),
+    color: '#bdc3c7',
+    marginBottom: moderateScale(30),
+    fontFamily: 'ComicRelief-Regular',
   },
   signupText: {
-    marginTop: moderateScale(20), // Scaled margin top
-    fontSize: moderateScale(14), // Scaled font size
-    color: '#ccc', // Light gray text for dark mode
+    marginTop: moderateScale(20),
+    fontSize: scaleFont(14),
+    color: '#ccc',
+    fontFamily: 'ComicRelief-Regular',
   },
   signupLink: {
-    color: '#3498db', // Lighter blue for dark mode
+    color: '#3498db',
     fontWeight: 'bold',
+    fontFamily: 'ComicRelief-Regular',
   },
 });

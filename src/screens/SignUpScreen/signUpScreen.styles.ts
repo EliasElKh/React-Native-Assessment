@@ -1,75 +1,78 @@
 import { StyleSheet } from 'react-native';
 import { moderateScale } from '../../utils/scalingUtils';
+import { scaleFont } from '../../utils/fontScaling';
 
 export const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: '#f5f7fa', // Light background
+    backgroundColor: '#f5f7fa',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: moderateScale(20), // Scaled padding
+    padding: moderateScale(20),
   },
   container: {
-    backgroundColor: '#fff', // White card
+    backgroundColor: '#fff',
     width: '100%',
-    borderRadius: moderateScale(12), // Scaled border radius
-    // padding: moderateScale(20), // Scaled padding (optional)
+    borderRadius: moderateScale(12),
+
     shadowColor: '#000',
     shadowOpacity: 0.2,
     shadowOffset: { width: 0, height: 3 },
-    shadowRadius: moderateScale(8), // Scaled shadow radius
+    shadowRadius: moderateScale(8),
     elevation: 5,
   },
   loginText: {
     color: 'black',
-    marginTop: moderateScale(16), // Scaled margin
+    marginTop: moderateScale(16),
     textAlign: 'center',
   },
   loginLink: {
-    color: '#4DA6FF', // Link color
+    color: '#4DA6FF',
     fontWeight: 'bold',
   },
   header: {
-    fontSize: moderateScale(28), // Scaled font size
+    fontSize: scaleFont(28),
     fontWeight: 'bold',
-    marginBottom: moderateScale(30), // Scaled margin bottom
+    marginBottom: moderateScale(30),
     textAlign: 'center',
+    fontFamily: 'ComicRelief-Regular',
   },
 });
 export const darkScreenStyles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: '#2c3e50', // Dark background
+    backgroundColor: '#2c3e50',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: moderateScale(20), // Scaled padding
+    padding: moderateScale(20),
   },
   container: {
-    backgroundColor: '#34495e', // Dark card background
+    backgroundColor: '#34495e',
     width: '100%',
-    borderRadius: moderateScale(12), // Scaled border radius
-    // padding: moderateScale(20), // Scaled padding (optional)
+    borderRadius: moderateScale(12),
+
     shadowColor: '#000',
     shadowOpacity: 0.2,
     shadowOffset: { width: 0, height: 3 },
-    shadowRadius: moderateScale(8), // Scaled shadow radius
+    shadowRadius: moderateScale(8),
     elevation: 5,
   },
   loginText: {
-    color: '#ecf0f1', // Light text for dark mode
-    marginTop: moderateScale(16), // Scaled margin
+    color: '#ecf0f1',
+    marginTop: moderateScale(16),
     textAlign: 'center',
   },
   loginLink: {
-    color: '#3498db', // Link color for dark mode
+    color: '#3498db',
     fontWeight: 'bold',
   },
   header: {
-    fontSize: moderateScale(28), // Scaled font size
+    fontSize: scaleFont(28),
     fontWeight: 'bold',
-    marginBottom: moderateScale(30), // Scaled margin bottom
+    marginBottom: moderateScale(30),
     textAlign: 'center',
-    color: '#ecf0f1', // Light text color for dark mode
+    color: '#ecf0f1',
+    fontFamily: 'ComicRelief-Regular',
   },
 });
 

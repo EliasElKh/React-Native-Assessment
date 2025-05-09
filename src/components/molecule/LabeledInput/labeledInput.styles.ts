@@ -3,19 +3,21 @@ import { moderateScale } from '../../../utils/scalingUtils';
 
 export const styles = StyleSheet.create({
   container: {
-    marginBottom: moderateScale(16), // Scaled margin bottom
+    marginBottom: moderateScale(16),
   },
   text: {
-    color: 'red', // Light mode text color
-    marginTop: moderateScale(4), // Scaled margin top
+    color: 'red',
+    marginTop: moderateScale(4),
+    fontFamily: 'ComicRelief-Regular',
   },
 });
 export const darkContainerStyles = StyleSheet.create({
   container: {
-    marginBottom: moderateScale(16), // Scaled margin bottom
+    marginBottom: moderateScale(16),
   },
   text: {
-    color: '#FF6347', // Dark mode text color (using a different shade of red)
-    marginTop: moderateScale(4), // Scaled margin top
+    color: '#FF6347',
+    marginTop: moderateScale(4),
+    fontFamily: 'ComicRelief-Regular',
   },
 });

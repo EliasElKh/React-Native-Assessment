@@ -1,10 +1,10 @@
-// ThemeContext.tsx
+
 
 import React, { createContext, useState, ReactNode, useContext } from 'react';
 
 type ThemeContextType = {
-  theme: 'light' | 'dark'; // Define possible themes
-  toggleTheme: () => void; // Function to toggle the theme
+  theme: 'light' | 'dark';
+  toggleTheme: () => void;
 };
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -23,7 +23,7 @@ export const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) =
   );
 };
 
-// Custom hook to use theme context
+
 export const useTheme = (): ThemeContextType => {
   const context = useContext(ThemeContext);
   if (!context) {

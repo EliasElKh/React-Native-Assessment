@@ -1,42 +1,46 @@
 import { StyleSheet } from 'react-native';
 import { moderateScale } from '../../../utils/scalingUtils';
+import { scaleFont } from '../../../utils/fontScaling';
 
 export const styles = StyleSheet.create({
   container: {
     width: '100%',
     alignItems: 'center',
-    gap: moderateScale(24), // Scaled gap
+    gap: moderateScale(24),
   },
   inputWrapper: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '80%',
+    fontFamily: 'ComicRelief-Regular',
   },
   inputBox: {
-    width: moderateScale(60), // Scaled width
-    height: moderateScale(60), // Scaled height
+    width: moderateScale(60),
+    height: moderateScale(60),
     borderWidth: 2,
-    borderRadius: moderateScale(14), // Scaled border radius
+    borderRadius: moderateScale(14),
     borderColor: '#ccc',
     textAlign: 'center',
-    fontSize: moderateScale(24), // Scaled font size
+    fontSize: scaleFont(24),
     fontWeight: '600',
     color: '#333',
     backgroundColor: '#fdfdfd',
     shadowColor: '#000',
     shadowOpacity: 0.08,
-    shadowOffset: { width: 0, height: moderateScale(2) }, // Scaled shadow offset
-    shadowRadius: moderateScale(6), // Scaled shadow radius
-    elevation: moderateScale(4), // Scaled elevation
+    shadowOffset: { width: 0, height: moderateScale(2) },
+    shadowRadius: moderateScale(6),
+    elevation: moderateScale(4),
+    fontFamily: 'ComicRelief-Regular',
   },
   inputBoxError: {
     borderColor: '#ff4d4f',
   },
   error: {
     color: '#ff4d4f',
-    fontSize: moderateScale(13), // Scaled font size
+    fontSize: scaleFont(13),
     fontWeight: '500',
-    marginTop: moderateScale(-10), // Scaled negative margin
+    marginTop: moderateScale(-10),
+    fontFamily: 'ComicRelief-Regular',
   },
 });
 
@@ -44,37 +48,40 @@ export const darkInputBoxStyles = StyleSheet.create({
   container: {
     width: '100%',
     alignItems: 'center',
-    gap: moderateScale(24), // Scaled gap
+    gap: moderateScale(24),
   },
   inputWrapper: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '80%',
+    fontFamily: 'ComicRelief-Regular',
   },
   inputBox: {
-    width: moderateScale(60), // Scaled width
-    height: moderateScale(60), // Scaled height
+    width: moderateScale(60),
+    height: moderateScale(60),
     borderWidth: 2,
-    borderRadius: moderateScale(14), // Scaled border radius
-    borderColor: '#7f8c8d', // Dark mode border color
+    borderRadius: moderateScale(14),
+    borderColor: '#7f8c8d',
     textAlign: 'center',
-    fontSize: moderateScale(24), // Scaled font size
+    fontSize: scaleFont(24),
     fontWeight: '600',
-    color: '#ecf0f1', // Dark mode text color
-    backgroundColor: '#34495e', // Dark mode background color
+    color: '#ecf0f1',
+    backgroundColor: '#34495e',
     shadowColor: '#fff',
     shadowOpacity: 0.08,
-    shadowOffset: { width: 0, height: moderateScale(2) }, // Scaled shadow offset
-    shadowRadius: moderateScale(6), // Scaled shadow radius
-    elevation: moderateScale(4), // Scaled elevation
+    shadowOffset: { width: 0, height: moderateScale(2) },
+    shadowRadius: moderateScale(6),
+    elevation: moderateScale(4),
+    fontFamily: 'ComicRelief-Regular',
   },
   inputBoxError: {
-    borderColor: '#e74c3c', // Dark mode error border color
+    borderColor: '#e74c3c',
   },
   error: {
-    color: '#e74c3c', // Dark mode error text color
-    fontSize: moderateScale(13), // Scaled font size
+    color: '#e74c3c',
+    fontSize: scaleFont(13),
     fontWeight: '500',
-    marginTop: moderateScale(-10), // Scaled negative margin
+    marginTop: moderateScale(-10),
+    fontFamily: 'ComicRelief-Regular',
   },
 });

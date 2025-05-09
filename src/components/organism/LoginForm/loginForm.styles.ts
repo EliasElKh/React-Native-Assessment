@@ -5,38 +5,40 @@ export const styles = StyleSheet.create({
   container: {
     width: '100%',
     backgroundColor: '#ffffff',
-    borderRadius: moderateScale(12), // Scaled border radius
-    padding: moderateScale(20), // Scaled padding
+    borderRadius: moderateScale(12),
+    padding: moderateScale(20),
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: moderateScale(4) }, // Scaled shadow offset
+    shadowOffset: { width: 0, height: moderateScale(4) },
     shadowOpacity: 0.1,
-    shadowRadius: moderateScale(8), // Scaled shadow radius
-    elevation: moderateScale(4), // Scaled elevation
+    shadowRadius: moderateScale(8),
+    elevation: moderateScale(4),
+    fontFamily: 'ComicRelief-Regular',
   },
   error: {
     color: '#e74c3c',
-    fontSize: moderateScale(13), // Scaled font size
-    marginBottom: moderateScale(8), // Scaled margin bottom
-    marginLeft: moderateScale(2), // Scaled margin left
+    fontSize: moderateScale(13),
+    marginBottom: moderateScale(8),
+    marginLeft: moderateScale(2),
   },
 });
 
 export const darkContainerStyles = StyleSheet.create({
   container: {
     width: '100%',
-    backgroundColor: '#2c3e50', // Dark mode background color
-    borderRadius: moderateScale(12), // Scaled border radius
-    padding: moderateScale(20), // Scaled padding
+    backgroundColor: '#2c3e50',
+    borderRadius: moderateScale(12),
+    padding: moderateScale(20),
     shadowColor: '#fff',
-    shadowOffset: { width: 0, height: moderateScale(4) }, // Scaled shadow offset
+    shadowOffset: { width: 0, height: moderateScale(4) },
     shadowOpacity: 0.1,
-    shadowRadius: moderateScale(8), // Scaled shadow radius
-    elevation: moderateScale(4), // Scaled elevation
+    shadowRadius: moderateScale(8),
+    elevation: moderateScale(4),
+    fontFamily: 'ComicRelief-Regular',
   },
   error: {
-    color: '#e74c3c', // Keep error color same, can adjust if needed
-    fontSize: moderateScale(13), // Scaled font size
-    marginBottom: moderateScale(8), // Scaled margin bottom
-    marginLeft: moderateScale(2), // Scaled margin left
+    color: '#e74c3c',
+    fontSize: moderateScale(13),
+    marginBottom: moderateScale(8),
+    marginLeft: moderateScale(2),
   },
 });

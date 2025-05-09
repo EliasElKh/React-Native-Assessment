@@ -1,10 +1,10 @@
-// organisms/ProductDetailScreen.tsx
+
 import React from 'react';
 import { View, Text, ScrollView} from 'react-native';
 import { RouteProp, useNavigation, useRoute } from '@react-navigation/native';
 import usersData from '../../../Products.json';
 import { Product } from './ProductDetailScreen.types';
-import { Button } from '../../components/atoms/Button';// Reusing Button atom
+import { Button } from '../../components/atoms/Button';
 import { CardImage } from '../../components/atoms/CardImage/CardImage';
 import { Label } from '../../components/atoms/Label';
 import { useTheme } from '../../context/ThemeContext/ThemeContext';
@@ -35,7 +35,7 @@ export const ProductDetailScreen: React.FC = () => {
       <Button
         onPress={() => navigation.goBack()}
         title="Back"
-        style={styles.button} // Pass custom styles for different buttons
+        style={styles.button}
       />
       <CardImage uri={product.images[0].url} />
       <Label text={product.title} style={styles.title} />

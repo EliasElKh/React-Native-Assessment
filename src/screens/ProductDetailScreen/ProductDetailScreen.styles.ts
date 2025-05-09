@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { moderateScale } from '../../utils/scalingUtils';
+import { scaleFont } from '../../utils/fontScaling';
 
 export const styles = StyleSheet.create({
   container: {
@@ -37,20 +38,23 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    fontSize: moderateScale(24),
+    fontSize: scaleFont(24),
     fontWeight: 'bold',
     marginBottom: moderateScale(8),
+    fontFamily: 'ComicRelief-Regular',
   },
   price: {
-    fontSize: moderateScale(20),
+    fontSize: scaleFont(20),
     color: '#007AFF',
     fontWeight: '600',
     marginBottom: moderateScale(12),
+    fontFamily: 'ComicRelief-Regular',
   },
   description: {
-    fontSize: moderateScale(16),
+    fontSize: scaleFont(16),
     color: '#333',
     lineHeight: moderateScale(24),
+    fontFamily: 'ComicRelief-Regular',
   },
   });
 
@@ -90,20 +94,23 @@ export const styles = StyleSheet.create({
       alignItems: 'center',
     },
     title: {
-      fontSize: moderateScale(24),
+      fontSize: scaleFont(24),
       fontWeight: 'bold',
       color: '#f5f5f5',
       marginBottom: moderateScale(8),
+      fontFamily: 'ComicRelief-Regular',
     },
     price: {
-      fontSize: moderateScale(20),
+      fontSize: scaleFont(20),
       color: '#4DA6FF',
       fontWeight: '600',
       marginBottom: moderateScale(12),
+      fontFamily: 'ComicRelief-Regular',
     },
     description: {
-      fontSize: moderateScale(16),
+      fontSize: scaleFont(16),
       color: '#ddd',
       lineHeight: moderateScale(24),
+      fontFamily: 'ComicRelief-Regular',
     },
   });

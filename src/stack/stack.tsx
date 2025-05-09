@@ -2,7 +2,7 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { LoginScreen } from '../screens/LoginScreen/LoginScreen';
 import { HomeScreen } from '../screens/HomeScreen/HomeScreen';
-import { VerificationScreen } from '../screens/VerificationScreen/VerificationScreen'; // OTP verification screen
+import { VerificationScreen } from '../screens/VerificationScreen/VerificationScreen';
 import { useAuth } from '../context/AuthContext';
 import { SignUpScreen } from '../screens/SignUpScreen/SignUpScreen';
 import { ProductDetailScreen } from '../screens/ProductDetailScreen/ProductDetailScreen';
@@ -11,7 +11,7 @@ import { ProductDetailScreen } from '../screens/ProductDetailScreen/ProductDetai
 export type RootStackParamList = {
   Login: undefined;
   Home: undefined;
-  Verification: undefined;  // OTP verification screen added
+  Verification: undefined;
   SignUp: undefined;
   ProductDetail: { id: string };
 };
@@ -19,7 +19,7 @@ export type RootStackParamList = {
 const StackNav = createNativeStackNavigator<RootStackParamList>();
 
 export const Stack = () => {
-  const { isLoggedIn, isVerified } = useAuth(); // Use both login and verification states
+  const { isLoggedIn, isVerified } = useAuth();
 
   return (
     <StackNav.Navigator screenOptions={{ headerShown: false }}>

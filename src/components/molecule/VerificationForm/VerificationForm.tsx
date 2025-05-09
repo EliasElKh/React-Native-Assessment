@@ -32,7 +32,7 @@ export const VerificationForm: React.FC<Props> = ({ onVerificationSuccess }) => 
       refs[index + 1].current?.focus();
     }
 
-    setError(false); // Reset error on change
+    setError(false);
   };
 
   const handleVerify = () => {

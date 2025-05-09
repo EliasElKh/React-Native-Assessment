@@ -5,11 +5,11 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [isVerified, setIsVerified] = useState(false); // Track OTP verification status
+  const [isVerified, setIsVerified] = useState(false);
 
   const login = () => setIsLoggedIn(true);
   const logout = () => setIsLoggedIn(false);
-  const verifyOTP = () => setIsVerified(true); // Set the user as verified
+  const verifyOTP = () => setIsVerified(true);
 
   return (
     <AuthContext.Provider value={{ isLoggedIn, isVerified, login, logout, verifyOTP }}>
